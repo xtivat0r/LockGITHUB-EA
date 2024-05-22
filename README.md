@@ -20,14 +20,14 @@ To configure the URL for the account name/number list and create the structure f
 
 1. Create a text file named account_list.txt.
    
-    Structure the file as follows:
-    Authorized Name:
-    Ali
-    Abu
-    
-    Authorized Acc Number:
-    1234556
-    782387
+       Structure the file as follows:
+       Authorized Name:
+       Ali
+       Abu
+       
+       Authorized Acc Number:
+       1234556
+       782387
 
 3. Upload the account_list.txt file to a web server accessible via URL.
 
@@ -37,9 +37,9 @@ To configure the URL for the account name/number list and create the structure f
 
 6. Find the line that defines the URL, for example:
 
-    const string url = "https://example.com/account_list.txt";
-    
-    Replace "https://example.com/account_list.txt" with the URL of the uploaded account_list.txt file.
+       const string url = "https://example.com/account_list.txt";
+       
+       Replace "https://example.com/account_list.txt" with the URL of the uploaded account_list.txt file.
 
 7. You may integrate the code into your existing ea on OnInit()
 
