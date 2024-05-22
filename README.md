@@ -20,7 +20,8 @@ To configure the URL for the account name/number list and create the structure f
 
 1. Create a text file named account_list.txt.
    
-       Structure the file as follows:
+   Structure the file as follows:
+   
        Authorized Name:
        Ali
        Abu
