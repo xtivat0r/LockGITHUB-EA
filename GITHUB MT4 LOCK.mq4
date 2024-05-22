@@ -47,8 +47,8 @@ int OnInit()
     string authorizedNames = StringSubstr(result_str, nameStart, nameEnd - nameStart);
     string authorizedNumbers = StringSubstr(result_str, numberStart, numberEnd - numberStart);
 
-    Print("Extracted Names: ", authorizedNames); // Debug print
-    Print("Extracted Numbers: ", authorizedNumbers); // Debug print
+    //Print("Extracted Names: ", authorizedNames); // Debug print
+    //Print("Extracted Numbers: ", authorizedNumbers); // Debug print
 
     string names[], numbers[];
     StringSplit(authorizedNames, '\n', names);
@@ -73,7 +73,7 @@ int OnInit()
         if(accountName == names[e]) {
             isValid = true;
             usingName = true;
-            Print("Account Name authorized: ", accountName);
+            Alert("Account Name authorized: ", accountName);
             break;
         }
     }
@@ -84,14 +84,14 @@ int OnInit()
             Print("Checking authorized number: ", numbers[f]); // Debug print
             if(IntegerToString(accountNumber) == numbers[f]) {
                 isValid = true;
-                Print("Account Number authorized: ", accountNumber);
+                Alert("Account Number authorized: ", accountNumber);
                 break;
             }
         }
     }
 
     if(!isValid) {
-        Print("Account not authorized to use this EA");
+        Alert("Account not authorized to use this EA");
         ExpertRemove();
         return(INIT_FAILED);
     }
