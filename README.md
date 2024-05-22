@@ -31,7 +31,7 @@ To configure the URL for the account name/number list and create the structure f
 
 3. Upload the account_list.txt file to a web server accessible via URL.
 
-4. Open the MT4_EA_Lock.mq4 file in the MetaEditor or any text editor.
+4. Open the GITHUB MT4 LOCK.mq4 file in the MetaEditor or any text editor.
 
 5. Locate the OnInit() function within the source code.
 
