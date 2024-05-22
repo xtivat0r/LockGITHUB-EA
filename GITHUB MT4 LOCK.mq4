@@ -69,7 +69,7 @@ int OnInit()
 
     // Check if account name is authorized
     for(int e = 0; e < ArraySize(names); e++) {
-        Print("Checking authorized name: ", names[e]); // Debug print
+        //Print("Checking authorized name: ", names[e]); // Debug print
         if(accountName == names[e]) {
             isValid = true;
             usingName = true;
@@ -81,7 +81,7 @@ int OnInit()
     // If validation was not done using account name, check if it was done using account number
     if(!usingName) {
         for(int f = 0; f < ArraySize(numbers); f++) {
-            Print("Checking authorized number: ", numbers[f]); // Debug print
+            //Print("Checking authorized number: ", numbers[f]); // Debug print
             if(IntegerToString(accountNumber) == numbers[f]) {
                 isValid = true;
                 Alert("Account Number authorized: ", accountNumber);
