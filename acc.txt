@@ -8,7 +8,6 @@ Jane Afiq
 Authorized Acc Number:
 {
 1234556,
-782387,
-9104877
+782387
 }
 
