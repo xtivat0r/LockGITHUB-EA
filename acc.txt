@@ -1,2 +1,12 @@
-Authorized Name or Number:
-{1234556, Ali, Abu, 782387, 9104877}
+Authorized Name:
+{
+Ali,
+Abu
+}
+Authorized Acc Number:
+{
+1234556,
+782387,
+9104877
+}
+
