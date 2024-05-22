@@ -19,6 +19,7 @@ MT4 EA Lock is a tool to control access to trading accounts based on predefined 
 To configure the URL for the account name/number list and create the structure for the account list, follow these steps:
 
 1. Create a text file named account_list.txt.
+   
     Structure the file as follows:
     Authorized Name:
     Ali
@@ -28,24 +29,24 @@ To configure the URL for the account name/number list and create the structure f
     1234556
     782387
 
-2. Upload the account_list.txt file to a web server accessible via URL.
+3. Upload the account_list.txt file to a web server accessible via URL.
 
-3. Open the MT4_EA_Lock.mq4 file in the MetaEditor or any text editor.
+4. Open the MT4_EA_Lock.mq4 file in the MetaEditor or any text editor.
 
-4. Locate the OnInit() function within the source code.
+5. Locate the OnInit() function within the source code.
 
-5. Find the line that defines the URL, for example:
+6. Find the line that defines the URL, for example:
 
-const string url = "https://example.com/account_list.txt";
+    const string url = "https://example.com/account_list.txt";
+    
+    Replace "https://example.com/account_list.txt" with the URL of the uploaded account_list.txt file.
 
-Replace "https://example.com/account_list.txt" with the URL of the uploaded account_list.txt file.
+7. You may integrate the code into your existing ea on OnInit()
 
-6. You may integrate the code into your existing ea on OnInit()
-
-7.  Buy me coffee
+8.  Buy me coffee
 
 ## Contact
 
 - Author: [@Fain_azif](https://t.me/Fain_azif)
-- GitHub: [YourGitHubUsername](https://github.com/xtivat0r)
+- GitHub: [xtivat0r](https://github.com/xtivat0r)
 
